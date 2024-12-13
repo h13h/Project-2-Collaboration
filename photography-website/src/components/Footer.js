@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2023 Photomenia</p>
+      <p>&copy; 2024 Photomenia</p>
     </footer>
   );
 };

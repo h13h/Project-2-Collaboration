@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const AboutUsPage = () => {
+const AudioPage = () => {
   return (
-    <div>
-      <h1>About Us</h1>
-      <p>Here's some information about our team and our mission.</p>
-      {/* Add more content about your team, mission, and history */}
+    <div className="audio-section">
+      <h1>Audio Collection</h1>
+      <p>Listen to amazing audio collection from Dubai.</p>
+      <audio controls>
+        <source src="/assets/Dubai-Audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
     </div>
   );
 };
 
-export default AboutUsPage;
+export default AudioPage;

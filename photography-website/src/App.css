@@ -5,13 +5,14 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248, 248, 248, 0.9); /* Slightly more opaque */
+  color: #333;
 }
 
 /* Navbar Styles */
 nav {
-  background-color: #e6e6fa;
-  padding: 10px;
+  background-color: #6a5acd; /* A subtle lavender shade */
+  padding: 15px;
 }
 
 nav ul {
@@ -19,49 +20,84 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav li {
-  margin-right: 20px;
+  margin-right: 30px;
+  font-size: 1.2rem;
 }
 
 nav a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0f8ff; /* Lighter hover effect */
 }
 
 /* Hero Section Styles */
 .hero-section {
-  background-image: url('your-hero-image.jpg'); /* Replace with your image path */
+  background-image: url('/assets/hero-image.jpg'); /* Example image path */
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Overlay for better contrast */
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Gallery Section Styles */
 .gallery-section {
   background-color: #f5f5f5;
-  padding: 50px;
+  padding: 50px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .gallery-item {
   width: 300px;
   margin: 20px;
-  border: 1px solid #ddd;
-  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
 }
 
 .gallery-item img {
   width: 100%;
+  border-radius: 10px;
   height: auto;
+}
+
+/* Responsive Gallery Layout */
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 
 /* Audio and Video Section Styles */
@@ -69,28 +105,40 @@ nav a {
   background-color: #f2f2f2;
   padding: 50px;
   text-align: center;
+  margin-top: 20px;
+}
+
+.audio-section h1, .video-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.audio-section p, .video-section p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+audio, video {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styles */
 footer {
-  background-color: #e6e6fa;
+  background-color: #6a5acd;
+  color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 1rem;
 }
 
-.gallery-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery-section img {
-  width: 300px;
-  height: 200px;
-  margin: 20px;
-}
-
-/* Add this to apply transparent background to all pages */
-body {
-  background-color: rgba(248, 248, 248, 0.8); /* Adjust opacity as needed */
+footer p {
+  margin: 0;
 }

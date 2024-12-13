@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav style={{ background: "#eee", padding: "10px" }}>
       <ul style={{ display: "flex", listStyle: "none", gap: "20px" }}>
@@ -23,6 +23,6 @@ function Navbar() {
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
