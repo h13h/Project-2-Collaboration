@@ -8,6 +8,40 @@ body {
   background-color: #f8f8f8;
 }
 
+/* Navbar Styles */
+nav {
+  background-color: #e6e6fa;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url('your-hero-image.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
 
 /* Gallery Section Styles */
 .gallery-section {
