@@ -1,38 +1,62 @@
-.App {
+/* app.css */
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+
+/* Gallery Section Styles */
+.gallery-section {
+  background-color: #f5f5f5;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-item {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Audio and Video Section Styles */
+.audio-section, .video-section {
+  background-color: #f2f2f2;
+  padding: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Footer Styles */
+footer {
+  background-color: #e6e6fa;
+  text-align: center;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gallery-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gallery-section img {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add this to apply transparent background to all pages */
+body {
+  background-color: rgba(248, 248, 248, 0.8); /* Adjust opacity as needed */
 }
